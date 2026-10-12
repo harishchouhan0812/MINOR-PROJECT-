@@ -1,0 +1,166 @@
+================================================================================
+                    EDUPULSE AI - QUICK START GUIDE
+================================================================================
+
+📋 STEP 1: INSTALL DEPENDENCIES
+--------------------------------
+Open terminal/command prompt in the edupulse-ai folder and run:
+
+    npm install
+
+⏱️ This will take 2-3 minutes. Wait for it to complete.
+
+
+🚀 STEP 2: START THE APPLICATION
+---------------------------------
+After installation completes, run:
+
+    npm run dev
+
+✅ You'll see: "VITE v8.x.x ready in XXX ms"
+✅ URL will be shown: http://localhost:5173/
+
+
+🌐 STEP 3: OPEN IN BROWSER
+---------------------------
+Open your web browser and go to:
+
+    http://localhost:5173/
+
+You should see the EduPulse AI landing page with 5 role cards.
+
+
+🎭 STEP 4: EXPLORE THE APPLICATION
+-----------------------------------
+Click on any role card to explore:
+
+    🎓 Student Portal    - View grades and attendance
+    👨‍🏫 Faculty Portal    - Monitor students and predictions  
+    🤝 Mentor Portal     - Manage support cases
+    💼 HOD Portal        - Department analytics
+    🛡️  Admin Portal      - System management
+
+
+📄 CONVERT DOCUMENTATION TO PDF
+--------------------------------
+To create PDF versions of all documentation:
+
+Windows: Double-click this file in File Explorer:
+    convert-to-pdf.bat
+
+PowerShell:
+    .\convert-to-pdf.ps1
+
+Requirements:
+    - Pandoc must be installed: https://pandoc.org/installing.html
+    - Or use browser: Open .md file → Print → Save as PDF
+
+PDFs will be created in the "docs-pdf" folder.
+
+
+📚 DOCUMENTATION FILES
+----------------------
+START_HERE.md           ← Read this first!
+HOW_TO_RUN.md          ← Complete running instructions
+QUICK_START.md         ← Quick start with demo workflow
+COMMANDS.md            ← All available commands
+README.md              ← Full project documentation
+PROJECT_STATUS.md      ← Implementation details
+COMPLETION_SUMMARY.md  ← Project deliverables
+
+
+🆘 TROUBLESHOOTING
+------------------
+Port Already in Use:
+    netstat -ano | findstr :5173
+    taskkill /PID <PID_NUMBER> /F
+    npm run dev
+
+Page is Blank:
+    Press Ctrl + Shift + R (hard refresh)
+    Press F12 to check browser console for errors
+
+Dependencies Won't Install:
+    npm cache clean --force
+    rm -r -force node_modules
+    npm install
+
+Application Not Working:
+    1. Stop server: Ctrl + C
+    2. Restart: npm run dev
+    3. Hard refresh browser: Ctrl + Shift + R
+
+
+⚡ QUICK COMMANDS REFERENCE
+---------------------------
+npm install              Install dependencies (first time)
+npm run dev             Start development server
+npm run build           Build for production
+npm test                Run tests
+convert-to-pdf.bat      Convert docs to PDF
+
+
+🎯 BEST DEMO FLOW FOR PRESENTATION
+-----------------------------------
+1. Show Landing Page - Explain 5 user roles
+2. Faculty Portal → Students → Click "Arjun Kumar" (STU003)
+3. View Prediction Details → Show SHAP explanation ⭐
+4. Create an Alert for the student
+5. Switch to Mentor Portal → Manage the case
+6. Switch to Student Portal → Show student perspective
+7. Switch to HOD Portal → Show department analytics
+
+
+📊 PROJECT HIGHLIGHTS
+---------------------
+✅ 50+ React components
+✅ 35+ routes across 5 user roles
+✅ Random Forest ML model with SHAP (Week 5)
+✅ Complete alert and intervention workflow
+✅ Responsive design (mobile-friendly)
+✅ TypeScript for type safety
+✅ Synthetic academic data (clearly marked)
+✅ Local storage for demo persistence
+
+
+🎓 DEMO ACCOUNTS
+----------------
+Student:  STU003 - Arjun Kumar (Has predictions ⚠️)
+Faculty:  FAC001 - Dr. Amit Verma
+Mentor:   MEN001 - Dr. Kavita Sharma
+HOD:      HOD001 - Dr. Ramesh Krishnan
+Admin:    ADM001 - Sunita Desai
+
+
+💡 IMPORTANT NOTES
+------------------
+• This is a frontend-only demonstration
+• All data is synthetic and for demo purposes only
+• No database or backend server required
+• Role switching is simulated (not secure authentication)
+• Browser localStorage used for demo state persistence
+
+
+📞 NEED MORE HELP?
+------------------
+1. Read START_HERE.md for comprehensive guide
+2. Check HOW_TO_RUN.md for detailed instructions
+3. Open browser DevTools (F12) to see errors
+4. Review README.md for complete documentation
+
+
+✅ READY TO START?
+------------------
+Run these two commands:
+
+    npm install
+    npm run dev
+
+Then open: http://localhost:5173/
+
+Good luck with your demo! 🚀
+
+
+================================================================================
+                EduPulse AI - CSE AI-ML Minor Project 2026
+================================================================================
